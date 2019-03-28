@@ -15,7 +15,7 @@ class Recipe extends Component {
     const res = await req.json();
     console.log(res.recipes);
     this.setState({
-      activeRecipe: res.recipes
+      activeRecipe: res.recipes[0]
     });
   };
 
